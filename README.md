@@ -1,3 +1,3 @@
 # DesignPatternsProject
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/stackblitz-starters-d1houf)
+(TypeScript) - Design patterns implemented with TypeScript
