@@ -1,19 +1,19 @@
 import * as React from 'react';
 
 // Singleton class
-class SingletonClass {
-  private static instance: SingletonClass;
+class Singleton {
+  private static instance: Singleton;
   private data: string;
 
   private constructor() {
     this.data = 'Singleton Instance';
   }
 
-  public static getInstance(): SingletonClass {
-    if (!SingletonClass.instance) {
-      SingletonClass.instance = new SingletonClass();
+  public static getInstance(): Singleton {
+    if (!Singleton.instance) {
+      Singleton.instance = new Singleton();
     }
-    return SingletonClass.instance;
+    return Singleton.instance;
   }
 
   public getData(): string {
@@ -21,10 +21,10 @@ class SingletonClass {
   }
 }
 
-export const Singleton = () => {
+export const SingletonComp = () => {
   // Usage
-  const singleton1 = SingletonClass.getInstance();
-  const singleton2 = SingletonClass.getInstance();
+  const singleton1 = Singleton.getInstance();
+  const singleton2 = Singleton.getInstance();
 
   console.log(singleton1.getData()); // Output: Singleton Instance
   console.log(singleton2.getData()); // Output: Singleton Instance

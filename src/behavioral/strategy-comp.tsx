@@ -1,5 +1,5 @@
 import * as React from 'react';
 
-export const Strategy = () => {
+export const StrategyComp = () => {
   return <h2>{'Strategy'}</h2>;
 };

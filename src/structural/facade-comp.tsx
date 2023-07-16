@@ -1,5 +1,5 @@
 import * as React from 'react';
 
-export const Facade = () => {
+export const FacadeComp = () => {
   return <h2>{'Facade'}</h2>;
 };

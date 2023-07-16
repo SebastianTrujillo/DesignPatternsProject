@@ -33,7 +33,7 @@ class Creator {
   }
 }
 
-export const FactoryMethod = () => {
+export const FactoryMethodComp = () => {
   // Usage
   const creator = new Creator();
 

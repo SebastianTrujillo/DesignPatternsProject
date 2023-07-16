@@ -23,7 +23,7 @@ class ConcretePrototype implements Prototype {
   }
 }
 
-export const Prototype = () => {
+export const PrototypeComp = () => {
   // Usage
   const prototype1 = new ConcretePrototype('Prototype 1');
   const clone1 = prototype1.clone();
