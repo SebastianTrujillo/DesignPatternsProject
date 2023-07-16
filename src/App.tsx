@@ -1,14 +1,14 @@
 import * as React from 'react';
 import './style.css';
-import { factoryMethodName } from './design-patterns/factory-method';
-import { prototypeName } from './design-patterns/prototype';
-import { singletonName } from './design-patterns/singleton';
-import { adapterName } from './design-patterns/adapter';
-import { facadeName } from './design-patterns/facade';
-import { bridgeName } from './design-patterns/bridge';
-import { mediatorName } from './design-patterns/mediator';
-import { observerName } from './design-patterns/observer';
-import { strategyName } from './design-patterns/strategy';
+import { factoryMethodName } from './creational/factory-method';
+import { prototypeName } from './creational/prototype';
+import { singletonName } from './creational/singleton';
+import { adapterName } from './structural/adapter';
+import { facadeName } from './structural/facade';
+import { bridgeName } from './structural/bridge';
+import { mediatorName } from './behavioral/mediator';
+import { observerName } from './behavioral/observer';
+import { strategyName } from './behavioral/strategy';
 
 export default function App() {
   return (
