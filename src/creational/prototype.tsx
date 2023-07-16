@@ -3,34 +3,32 @@ import * as React from 'react';
 // Prototype interface
 interface Prototype {
   clone(): Prototype;
+  getInfo(): void;
 }
 
 // Concrete prototype
 class ConcretePrototype implements Prototype {
-  private property: string;
+  private name: string;
 
-  constructor(property: string) {
-    this.property = property;
+  constructor(name: string) {
+    this.name = name;
   }
 
   public clone(): Prototype {
-    // Create a new instance of the same concrete prototype class
-    const clone = new ConcretePrototype(this.property);
-    return clone;
+    return new ConcretePrototype(this.name);
   }
 
-  public getProperty(): string {
-    return this.property;
+  public getInfo(): void {
+    console.log(`Prototype name: ${this.name}`);
   }
 }
 
 export const Prototype = () => {
   // Usage
-  const prototype = new ConcretePrototype('Prototype');
-  const clone = prototype.clone();
-
-  console.log(prototype.getProperty()); // Output: Prototype
-  console.log(clone.getProperty()); // Output: Prototype
+  const prototype1 = new ConcretePrototype('Prototype 1');
+  const clone1 = prototype1.clone();
+  prototype1.getInfo(); // Output: Prototype name: Prototype 1
+  clone1.getInfo(); // Output: Prototype name: Prototype 1
 
   return <h2>{'Prototype'}</h2>;
 };
